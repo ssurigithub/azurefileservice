@@ -1,7 +1,12 @@
 var fs = require('fs')
 var path = require('path')
 var storage = require('azure-storage');
+var parseJson = require('./testingfileAdd');
 
+console.log(parseJson);
+
+
+parseJson();
 const connection_string = "DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=mystorageaccount16827;AccountKey=ToNRgZS6Y9XBoQW9Ej7pbKZiepeaNDDWfL32dkVzG0I2Cwg42iaOG+TqNrXbm+b0iEAi5CsztBxfxggogTduUQ==";
 
 const fileService = storage.createFileService(connection_string);
